@@ -82,3 +82,23 @@ a .image_link{
     .image_link:hover {
     filter: grayscale(70%);
 }
+
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .page {
+        height: 80px;
+    }
+
+    a .image_link {
+        height: 80px;
+        width: 100%;
+    }
+}
